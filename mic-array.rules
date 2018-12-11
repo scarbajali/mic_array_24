@@ -1,0 +1,85 @@
+
+(rules PCB mic-array
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 120.0)
+    (clear 120.2)
+    (clear 60.0 (type smd_to_turn_gap))
+    (clear 30.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_350:200_um"
+    (shape
+      (circle F.Cu 350.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 350.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_350:200_um" "Via[0-1]_350:200_um" default
+  )
+  (via 
+    "Via[0-1]_350:200_um-kicad_default" "Via[0-1]_350:200_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_350:200_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_350:200_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 120.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +3V3 /DATA0 /DATA13 /DATA8 /DATA9 /DATA10 /DATA11
+    /DATA12 /DATA7 /DATA6 /DATA1 /DATA2 /DATA3 /DATA4 /DATA5
+    /CLK6 /CLK2 /CLK0 /CLK1 /CLK5 /CLK4 /CLK3 /CLKIN
+    "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(J1-Pad6)" "Net-(J1-Pad8)" "Net-(J1-Pad10)" "Net-(J1-Pad11)"
+    "Net-(J1-Pad14)" "Net-(J1-Pad16)" "Net-(J1-Pad18)" "Net-(J1-Pad20)" "Net-(J1-Pad21)" "Net-(J1-Pad22)" "Net-(J1-Pad24)" "Net-(J1-Pad26)"
+    "Net-(J1-Pad28)" "Net-(J1-Pad32)" "Net-(J1-Pad34)" "Net-(J1-Pad36)" "Net-(J1-Pad38)" "Net-(J1-Pad40)" "Net-(K1-Pad9)" "/CLK0_0"
+    "/CLK0_3" "/CLK0_2" "/CLK0_1" "/CLK6_0" "/CLK6_3" "/CLK3_2" "/CLK4_0" "/CLK4_1"
+    "/CLK4_2" "/CLK4_3" "/CLK5_0" "/CLK5_1" "/CLK5_2" "/CLK5_3" "/CLK6_1" "/CLK6_2"
+    "/CLK3_3" "/CLK3_1" "/CLK1_0" "/CLK1_1" "/CLK1_2" "/CLK1_3" "/CLK2_0" "/CLK2_1"
+    "/CLK2_2" "/CLK2_3" "/CLK3_0"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 120.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

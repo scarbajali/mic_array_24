@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name pdm-mics)(type KiCad)(uri ${KIPRJMOD}/libraries/pdm-mics.pretty)(options "")(descr ""))
+  (lib (name bridges)(type KiCad)(uri ${KIPRJMOD}/libraries/bridges.pretty)(options "")(descr ""))
+)
