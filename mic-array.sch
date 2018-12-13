@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mic-array-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -211,7 +210,7 @@ U 1 1 5C14F306
 P 8500 1850
 F 0 "J1" H 8550 2967 50  0000 C CNN
 F 1 "CON40A" H 8550 2876 50  0000 C CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_2x20_P1.27mm_Vertical" H 8500 1850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 8500 1850 50  0001 C CNN
 F 3 "~" H 8500 1850 50  0001 C CNN
 	1    8500 1850
 	1    0    0    -1  
