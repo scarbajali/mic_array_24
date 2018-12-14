@@ -18,40 +18,40 @@ DATA0
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 59246882
-P 4850 4450
-F 0 "#FLG01" H 4850 4525 50  0001 C CNN
-F 1 "PWR_FLAG" H 4850 4600 50  0000 C CNN
-F 2 "" H 4850 4450 50  0001 C CNN
-F 3 "" H 4850 4450 50  0001 C CNN
-	1    4850 4450
+P 4250 5100
+F 0 "#FLG01" H 4250 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 4250 5250 50  0000 C CNN
+F 2 "" H 4250 5100 50  0001 C CNN
+F 3 "" H 4250 5100 50  0001 C CNN
+	1    4250 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 592468FA
-P 5250 4450
-F 0 "#FLG02" H 5250 4525 50  0001 C CNN
-F 1 "PWR_FLAG" H 5250 4600 50  0000 C CNN
-F 2 "" H 5250 4450 50  0001 C CNN
-F 3 "" H 5250 4450 50  0001 C CNN
-	1    5250 4450
+P 4650 5100
+F 0 "#FLG02" H 4650 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 5250 50  0000 C CNN
+F 2 "" H 4650 5100 50  0001 C CNN
+F 3 "" H 4650 5100 50  0001 C CNN
+	1    4650 5100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L power:GND #PWR011
 U 1 1 59246E84
-P 4850 4550
-F 0 "#PWR03" H 4850 4300 50  0001 C CNN
-F 1 "GND" H 4850 4400 50  0000 C CNN
-F 2 "" H 4850 4550 50  0001 C CNN
-F 3 "" H 4850 4550 50  0001 C CNN
-	1    4850 4550
+P 4250 5200
+F 0 "#PWR011" H 4250 4950 50  0001 C CNN
+F 1 "GND" H 4250 5050 50  0000 C CNN
+F 2 "" H 4250 5200 50  0001 C CNN
+F 3 "" H 4250 5200 50  0001 C CNN
+	1    4250 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 4450 4850 4550
+	4250 5100 4250 5200
 Wire Wire Line
-	5250 4450 5250 4550
+	4650 5100 4650 5200
 $Sheet
 S 1700 2000 550  350 
 U 5C093110
@@ -216,21 +216,21 @@ F 3 "~" H 8500 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR05
+L power:+3V3 #PWR012
 U 1 1 5C14FDD1
-P 5250 4550
-F 0 "#PWR05" H 5250 4400 50  0001 C CNN
-F 1 "+3V3" H 5265 4723 50  0000 C CNN
-F 2 "" H 5250 4550 50  0001 C CNN
-F 3 "" H 5250 4550 50  0001 C CNN
-	1    5250 4550
+P 4650 5200
+F 0 "#PWR012" H 4650 5050 50  0001 C CNN
+F 1 "+3V3" H 4665 5373 50  0000 C CNN
+F 2 "" H 4650 5200 50  0001 C CNN
+F 3 "" H 4650 5200 50  0001 C CNN
+	1    4650 5200
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR010
+L power:+3V3 #PWR01
 U 1 1 5C15087C
 P 7350 1300
-F 0 "#PWR010" H 7350 1150 50  0001 C CNN
+F 0 "#PWR01" H 7350 1150 50  0001 C CNN
 F 1 "+3V3" H 7365 1473 50  0000 C CNN
 F 2 "" H 7350 1300 50  0001 C CNN
 F 3 "" H 7350 1300 50  0001 C CNN
@@ -238,10 +238,10 @@ F 3 "" H 7350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L power:GND #PWR07
 U 1 1 5C15095B
 P 6300 3050
-F 0 "#PWR09" H 6300 2800 50  0001 C CNN
+F 0 "#PWR07" H 6300 2800 50  0001 C CNN
 F 1 "GND" H 6300 2900 50  0000 C CNN
 F 2 "" H 6300 3050 50  0001 C CNN
 F 3 "" H 6300 3050 50  0001 C CNN
@@ -249,10 +249,10 @@ F 3 "" H 6300 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L power:GND #PWR06
 U 1 1 5C150978
 P 5650 2800
-F 0 "#PWR07" H 5650 2550 50  0001 C CNN
+F 0 "#PWR06" H 5650 2550 50  0001 C CNN
 F 1 "GND" H 5650 2650 50  0000 C CNN
 F 2 "" H 5650 2800 50  0001 C CNN
 F 3 "" H 5650 2800 50  0001 C CNN
@@ -309,51 +309,47 @@ Wire Wire Line
 	5700 2350 5700 2250
 Text Label 5600 1750 2    50   ~ 0
 CLKIN
-Text Label 6800 1750 0    50   ~ 0
-CLK6
-Text Label 6800 1850 0    50   ~ 0
-CLK2
 Text Label 6800 1950 0    50   ~ 0
-CLK5
-Text Label 6800 2050 0    50   ~ 0
 CLK0
-Text Label 6800 2150 0    50   ~ 0
+Text Label 6800 2050 0    50   ~ 0
 CLK3
+Text Label 6800 2150 0    50   ~ 0
+CLK6
 Text Label 6800 2250 0    50   ~ 0
-CLK1
+CLK7
 Text Label 6800 2350 0    50   ~ 0
-CLK4
+CLK8
 Text Label 1700 2650 2    50   ~ 0
-CLK1_0
-Text Label 1700 3250 2    50   ~ 0
 CLK2_0
-Text Label 1700 3850 2    50   ~ 0
-CLK3_0
-Text Label 1700 4450 2    50   ~ 0
+Text Label 1700 3250 2    50   ~ 0
 CLK4_0
-Text Label 1700 5050 2    50   ~ 0
-CLK5_0
-Text Label 1700 5650 2    50   ~ 0
+Text Label 1700 3850 2    50   ~ 0
 CLK6_0
+Text Label 1700 4450 2    50   ~ 0
+CLK8_0
+Text Label 1700 5050 2    50   ~ 0
+CLK10_0
+Text Label 1700 5650 2    50   ~ 0
+CLK12_0
 Text Label 2800 2050 2    50   ~ 0
-CLK0_2
+CLK1_0
 Text Label 2800 2750 2    50   ~ 0
-CLK1_3
+CLK3_1
 Text Label 2800 3250 2    50   ~ 0
-CLK2_2
+CLK5_0
 Text Label 2800 3850 2    50   ~ 0
-CLK3_2
+CLK7_0
 Text Label 2800 4450 2    50   ~ 0
-CLK4_2
+CLK9_0
 Text Label 2800 5050 2    50   ~ 0
-CLK5_2
+CLK11_0
 Text Label 2800 5650 2    50   ~ 0
-CLK6_2
+CLK13_0
 $Comp
-L power:+3V3 #PWR012
+L power:+3V3 #PWR04
 U 1 1 5C151627
 P 8300 2350
-F 0 "#PWR012" H 8300 2200 50  0001 C CNN
+F 0 "#PWR04" H 8300 2200 50  0001 C CNN
 F 1 "+3V3" V 8315 2478 50  0000 L CNN
 F 2 "" H 8300 2350 50  0001 C CNN
 F 3 "" H 8300 2350 50  0001 C CNN
@@ -361,10 +357,10 @@ F 3 "" H 8300 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR013
+L power:GND #PWR02
 U 1 1 5C1516B2
 P 8800 1450
-F 0 "#PWR013" H 8800 1200 50  0001 C CNN
+F 0 "#PWR02" H 8800 1200 50  0001 C CNN
 F 1 "GND" H 8800 1300 50  0000 C CNN
 F 2 "" H 8800 1450 50  0001 C CNN
 F 3 "" H 8800 1450 50  0001 C CNN
@@ -372,10 +368,10 @@ F 3 "" H 8800 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR014
+L power:GND #PWR05
 U 1 1 5C1516C7
 P 8800 2350
-F 0 "#PWR014" H 8800 2100 50  0001 C CNN
+F 0 "#PWR05" H 8800 2100 50  0001 C CNN
 F 1 "GND" H 8800 2200 50  0000 C CNN
 F 2 "" H 8800 2350 50  0001 C CNN
 F 3 "" H 8800 2350 50  0001 C CNN
@@ -413,10 +409,10 @@ DATA12
 Text Label 8300 2850 2    50   ~ 0
 DATA13
 $Comp
-L Device:C_Small C5
+L Device:C_Small C1
 U 1 1 5C1521EB
 P 7350 1600
-F 0 "C5" H 7442 1646 50  0000 L CNN
+F 0 "C1" H 7442 1646 50  0000 L CNN
 F 1 "100n" H 7442 1555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7350 1600 50  0001 C CNN
 F 3 "~" H 7350 1600 50  0001 C CNN
@@ -424,10 +420,10 @@ F 3 "~" H 7350 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR011
+L power:GND #PWR03
 U 1 1 5C1523CA
 P 7350 1700
-F 0 "#PWR011" H 7350 1450 50  0001 C CNN
+F 0 "#PWR03" H 7350 1450 50  0001 C CNN
 F 1 "GND" H 7355 1527 50  0000 C CNN
 F 2 "" H 7350 1700 50  0001 C CNN
 F 3 "" H 7350 1700 50  0001 C CNN
@@ -455,123 +451,123 @@ Connection ~ 7350 1350
 Wire Wire Line
 	7350 1350 7350 1500
 $Comp
-L Device:CP C1
-U 1 1 5C154115
-P 4600 6650
-F 0 "C1" H 4718 6696 50  0000 L CNN
-F 1 "100u" H 4718 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 4638 6500 50  0001 C CNN
-F 3 "~" H 4600 6650 50  0001 C CNN
-	1    4600 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C2
-U 1 1 5C1542B3
-P 5000 6650
-F 0 "C2" H 5118 6696 50  0000 L CNN
-F 1 "100u" H 5118 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 5038 6500 50  0001 C CNN
-F 3 "~" H 5000 6650 50  0001 C CNN
-	1    5000 6650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C3
-U 1 1 5C1542EA
-P 5400 6650
-F 0 "C3" H 5518 6696 50  0000 L CNN
-F 1 "100u" H 5518 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 5438 6500 50  0001 C CNN
-F 3 "~" H 5400 6650 50  0001 C CNN
-	1    5400 6650
+U 1 1 5C154115
+P 3950 7050
+F 0 "C3" H 4068 7096 50  0000 L CNN
+F 1 "100u" H 4068 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 3988 6900 50  0001 C CNN
+F 3 "~" H 3950 7050 50  0001 C CNN
+	1    3950 7050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP C4
+U 1 1 5C1542B3
+P 4350 7050
+F 0 "C4" H 4468 7096 50  0000 L CNN
+F 1 "100u" H 4468 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 4388 6900 50  0001 C CNN
+F 3 "~" H 4350 7050 50  0001 C CNN
+	1    4350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5C1542EA
+P 4750 7050
+F 0 "C5" H 4868 7096 50  0000 L CNN
+F 1 "100u" H 4868 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 4788 6900 50  0001 C CNN
+F 3 "~" H 4750 7050 50  0001 C CNN
+	1    4750 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
 U 1 1 5C15430B
-P 5800 6650
-F 0 "C4" H 5918 6696 50  0000 L CNN
-F 1 "100u" H 5918 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 5838 6500 50  0001 C CNN
-F 3 "~" H 5800 6650 50  0001 C CNN
-	1    5800 6650
+P 5150 7050
+F 0 "C6" H 5268 7096 50  0000 L CNN
+F 1 "100u" H 5268 7005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 5188 6900 50  0001 C CNN
+F 3 "~" H 5150 7050 50  0001 C CNN
+	1    5150 7050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L power:GND #PWR015
 U 1 1 5C154349
-P 4600 6800
-F 0 "#PWR02" H 4600 6550 50  0001 C CNN
-F 1 "GND" H 4605 6627 50  0000 C CNN
-F 2 "" H 4600 6800 50  0001 C CNN
-F 3 "" H 4600 6800 50  0001 C CNN
-	1    4600 6800
+P 3950 7200
+F 0 "#PWR015" H 3950 6950 50  0001 C CNN
+F 1 "GND" H 3955 7027 50  0000 C CNN
+F 2 "" H 3950 7200 50  0001 C CNN
+F 3 "" H 3950 7200 50  0001 C CNN
+	1    3950 7200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L power:GND #PWR016
 U 1 1 5C15442D
-P 5000 6800
-F 0 "#PWR04" H 5000 6550 50  0001 C CNN
-F 1 "GND" H 5005 6627 50  0000 C CNN
-F 2 "" H 5000 6800 50  0001 C CNN
-F 3 "" H 5000 6800 50  0001 C CNN
-	1    5000 6800
+P 4350 7200
+F 0 "#PWR016" H 4350 6950 50  0001 C CNN
+F 1 "GND" H 4355 7027 50  0000 C CNN
+F 2 "" H 4350 7200 50  0001 C CNN
+F 3 "" H 4350 7200 50  0001 C CNN
+	1    4350 7200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L power:GND #PWR017
 U 1 1 5C15444B
-P 5400 6800
-F 0 "#PWR06" H 5400 6550 50  0001 C CNN
-F 1 "GND" H 5405 6627 50  0000 C CNN
-F 2 "" H 5400 6800 50  0001 C CNN
-F 3 "" H 5400 6800 50  0001 C CNN
-	1    5400 6800
+P 4750 7200
+F 0 "#PWR017" H 4750 6950 50  0001 C CNN
+F 1 "GND" H 4755 7027 50  0000 C CNN
+F 2 "" H 4750 7200 50  0001 C CNN
+F 3 "" H 4750 7200 50  0001 C CNN
+	1    4750 7200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L power:GND #PWR018
 U 1 1 5C154469
-P 5800 6800
-F 0 "#PWR08" H 5800 6550 50  0001 C CNN
-F 1 "GND" H 5805 6627 50  0000 C CNN
-F 2 "" H 5800 6800 50  0001 C CNN
-F 3 "" H 5800 6800 50  0001 C CNN
-	1    5800 6800
+P 5150 7200
+F 0 "#PWR018" H 5150 6950 50  0001 C CNN
+F 1 "GND" H 5155 7027 50  0000 C CNN
+F 2 "" H 5150 7200 50  0001 C CNN
+F 3 "" H 5150 7200 50  0001 C CNN
+	1    5150 7200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR01
+L power:+3V3 #PWR014
 U 1 1 5C1544C1
-P 4600 6300
-F 0 "#PWR01" H 4600 6150 50  0001 C CNN
-F 1 "+3V3" H 4615 6473 50  0000 C CNN
-F 2 "" H 4600 6300 50  0001 C CNN
-F 3 "" H 4600 6300 50  0001 C CNN
-	1    4600 6300
+P 3950 6700
+F 0 "#PWR014" H 3950 6550 50  0001 C CNN
+F 1 "+3V3" H 3965 6873 50  0000 C CNN
+F 2 "" H 3950 6700 50  0001 C CNN
+F 3 "" H 3950 6700 50  0001 C CNN
+	1    3950 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 6500 5800 6400
+	5150 6900 5150 6800
 Wire Wire Line
-	5800 6400 5400 6400
+	5150 6800 4750 6800
 Wire Wire Line
-	4600 6400 4600 6500
+	3950 6800 3950 6900
 Wire Wire Line
-	4600 6300 4600 6400
-Connection ~ 4600 6400
+	3950 6700 3950 6800
+Connection ~ 3950 6800
 Wire Wire Line
-	5400 6500 5400 6400
-Connection ~ 5400 6400
+	4750 6900 4750 6800
+Connection ~ 4750 6800
 Wire Wire Line
-	5400 6400 5000 6400
+	4750 6800 4350 6800
 Wire Wire Line
-	5000 6500 5000 6400
-Connection ~ 5000 6400
+	4350 6900 4350 6800
+Connection ~ 4350 6800
 Wire Wire Line
-	5000 6400 4600 6400
+	4350 6800 3950 6800
 NoConn ~ 8300 950 
 NoConn ~ 8300 1050
 NoConn ~ 8300 1450
@@ -594,182 +590,417 @@ NoConn ~ 8800 2550
 NoConn ~ 8800 2650
 NoConn ~ 8800 2750
 NoConn ~ 8800 2850
-NoConn ~ 6800 2450
 Text Label 1700 2150 2    50   ~ 0
 CLK0_1
 Text Label 1700 2050 2    50   ~ 0
 CLK0_0
 Text Label 2800 2150 2    50   ~ 0
-CLK0_3
-Text Label 1700 2750 2    50   ~ 0
 CLK1_1
-Text Label 2800 2650 2    50   ~ 0
-CLK1_2
-Text Label 1700 3350 2    50   ~ 0
+Text Label 1700 2750 2    50   ~ 0
 CLK2_1
-Text Label 2800 3350 2    50   ~ 0
-CLK2_3
-Text Label 2800 3950 2    50   ~ 0
-CLK3_3
-Text Label 1700 3950 2    50   ~ 0
-CLK3_1
-Text Label 1700 4550 2    50   ~ 0
+Text Label 2800 2650 2    50   ~ 0
+CLK3_0
+Text Label 1700 3350 2    50   ~ 0
 CLK4_1
-Text Label 2800 4550 2    50   ~ 0
-CLK4_3
-Text Label 2800 5150 2    50   ~ 0
-CLK5_3
-Text Label 1700 5150 2    50   ~ 0
+Text Label 2800 3350 2    50   ~ 0
 CLK5_1
-Text Label 1700 5750 2    50   ~ 0
+Text Label 2800 3950 2    50   ~ 0
+CLK7_1
+Text Label 1700 3950 2    50   ~ 0
 CLK6_1
+Text Label 1700 4550 2    50   ~ 0
+CLK8_1
+Text Label 2800 4550 2    50   ~ 0
+CLK9_1
+Text Label 2800 5150 2    50   ~ 0
+CLK11_1
+Text Label 1700 5150 2    50   ~ 0
+CLK10_1
+Text Label 1700 5750 2    50   ~ 0
+CLK12_1
 Text Label 2800 5750 2    50   ~ 0
-CLK6_3
-Text Label 7300 4050 3    50   ~ 0
-CLK0_3
-Text Label 7200 4050 3    50   ~ 0
-CLK0_2
-Text Label 7100 4050 3    50   ~ 0
-CLK0_1
-Text Label 7000 4050 3    50   ~ 0
-CLK0_0
-Text Label 7000 3650 0    50   ~ 0
-CLK0
+CLK13_1
 $Comp
-L Device:R_Network04 RN1
-U 1 1 5C076977
-P 7200 3850
-F 0 "RN1" H 7380 3850 50  0000 L CNN
-F 1 "0" H 7380 3805 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 7475 3850 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7200 3850 50  0001 C CNN
-	1    7200 3850
+L Device:Net-Tie_3_Tee NT1
+U 1 1 5C12DF7F
+P 9500 3350
+F 0 "NT1" V 9454 3391 50  0000 L CNN
+F 1 "Tie" V 9545 3391 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 3350 50  0001 C CNN
+F 3 "~" H 9500 3350 50  0001 C CNN
+	1    9500 3350
+	0    1    1    0   
+$EndComp
+Text Label 9400 3350 2    50   ~ 0
+CLK0
+Text Label 9500 3250 0    50   ~ 0
+CLK0_0
+Text Label 9500 3450 0    50   ~ 0
+CLK0_1
+$Comp
+L Device:Net-Tie_3_Tee NT2
+U 1 1 5C12ED14
+P 10150 3350
+F 0 "NT2" V 10104 3391 50  0000 L CNN
+F 1 "Tie" V 10195 3391 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 3350 50  0001 C CNN
+F 3 "~" H 10150 3350 50  0001 C CNN
+	1    10150 3350
+	0    1    1    0   
+$EndComp
+Text Label 10050 3350 2    50   ~ 0
+CLK1
+Text Label 10150 3250 0    50   ~ 0
+CLK1_0
+Text Label 10150 3450 0    50   ~ 0
+CLK1_1
+Text Label 6800 2450 0    50   ~ 0
+CLK9
+$Comp
+L Device:Net-Tie_3_Tee NT13
+U 1 1 5C130F74
+P 9500 6100
+F 0 "NT13" V 9454 6141 50  0000 L CNN
+F 1 "Tie" V 9545 6141 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 6100 50  0001 C CNN
+F 3 "~" H 9500 6100 50  0001 C CNN
+	1    9500 6100
+	0    1    1    0   
+$EndComp
+Text Label 9400 6100 2    50   ~ 0
+CLK12
+Text Label 9500 6000 0    50   ~ 0
+CLK12_0
+Text Label 9500 6200 0    50   ~ 0
+CLK12_1
+$Comp
+L Device:Net-Tie_3_Tee NT14
+U 1 1 5C130F7D
+P 10150 6100
+F 0 "NT14" V 10104 6141 50  0000 L CNN
+F 1 "Tie" V 10195 6141 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 6100 50  0001 C CNN
+F 3 "~" H 10150 6100 50  0001 C CNN
+	1    10150 6100
+	0    1    1    0   
+$EndComp
+Text Label 10050 6100 2    50   ~ 0
+CLK13
+Text Label 10150 6000 0    50   ~ 0
+CLK13_0
+Text Label 10150 6200 0    50   ~ 0
+CLK13_1
+$Comp
+L Device:Net-Tie_3_Tee NT5
+U 1 1 5C131C92
+P 9500 4250
+F 0 "NT5" V 9454 4291 50  0000 L CNN
+F 1 "Tie" V 9545 4291 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 4250 50  0001 C CNN
+F 3 "~" H 9500 4250 50  0001 C CNN
+	1    9500 4250
+	0    1    1    0   
+$EndComp
+Text Label 9400 4250 2    50   ~ 0
+CLK4
+Text Label 9500 4150 0    50   ~ 0
+CLK4_0
+Text Label 9500 4350 0    50   ~ 0
+CLK4_1
+$Comp
+L Device:Net-Tie_3_Tee NT6
+U 1 1 5C131C9B
+P 10150 4250
+F 0 "NT6" V 10104 4291 50  0000 L CNN
+F 1 "Tie" V 10195 4291 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 4250 50  0001 C CNN
+F 3 "~" H 10150 4250 50  0001 C CNN
+	1    10150 4250
+	0    1    1    0   
+$EndComp
+Text Label 10050 4250 2    50   ~ 0
+CLK5
+Text Label 10150 4150 0    50   ~ 0
+CLK5_0
+Text Label 10150 4350 0    50   ~ 0
+CLK5_1
+$Comp
+L Device:Net-Tie_3_Tee NT3
+U 1 1 5C131CA4
+P 9500 3800
+F 0 "NT3" V 9454 3841 50  0000 L CNN
+F 1 "Tie" V 9545 3841 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 3800 50  0001 C CNN
+F 3 "~" H 9500 3800 50  0001 C CNN
+	1    9500 3800
+	0    1    1    0   
+$EndComp
+Text Label 9400 3800 2    50   ~ 0
+CLK2
+Text Label 9500 3700 0    50   ~ 0
+CLK2_0
+Text Label 9500 3900 0    50   ~ 0
+CLK2_1
+$Comp
+L Device:Net-Tie_3_Tee NT4
+U 1 1 5C131CAD
+P 10150 3800
+F 0 "NT4" V 10104 3841 50  0000 L CNN
+F 1 "Tie" V 10195 3841 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 3800 50  0001 C CNN
+F 3 "~" H 10150 3800 50  0001 C CNN
+	1    10150 3800
+	0    1    1    0   
+$EndComp
+Text Label 10050 3800 2    50   ~ 0
+CLK3
+Text Label 10150 3700 0    50   ~ 0
+CLK3_0
+Text Label 10150 3900 0    50   ~ 0
+CLK3_1
+$Comp
+L Device:Net-Tie_3_Tee NT7
+U 1 1 5C132463
+P 9500 4750
+F 0 "NT7" V 9454 4791 50  0000 L CNN
+F 1 "Tie" V 9545 4791 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 4750 50  0001 C CNN
+F 3 "~" H 9500 4750 50  0001 C CNN
+	1    9500 4750
+	0    1    1    0   
+$EndComp
+Text Label 9400 4750 2    50   ~ 0
+CLK6
+Text Label 9500 4650 0    50   ~ 0
+CLK6_0
+Text Label 9500 4850 0    50   ~ 0
+CLK6_1
+$Comp
+L Device:Net-Tie_3_Tee NT8
+U 1 1 5C13246C
+P 10150 4750
+F 0 "NT8" V 10104 4791 50  0000 L CNN
+F 1 "Tie" V 10195 4791 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 4750 50  0001 C CNN
+F 3 "~" H 10150 4750 50  0001 C CNN
+	1    10150 4750
+	0    1    1    0   
+$EndComp
+Text Label 10050 4750 2    50   ~ 0
+CLK7
+Text Label 10150 4650 0    50   ~ 0
+CLK7_0
+Text Label 10150 4850 0    50   ~ 0
+CLK7_1
+$Comp
+L Device:Net-Tie_3_Tee NT11
+U 1 1 5C132475
+P 9500 5650
+F 0 "NT11" V 9454 5691 50  0000 L CNN
+F 1 "Tie" V 9545 5691 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 5650 50  0001 C CNN
+F 3 "~" H 9500 5650 50  0001 C CNN
+	1    9500 5650
+	0    1    1    0   
+$EndComp
+Text Label 9400 5650 2    50   ~ 0
+CLK10
+Text Label 9500 5550 0    50   ~ 0
+CLK10_0
+Text Label 9500 5750 0    50   ~ 0
+CLK10_1
+$Comp
+L Device:Net-Tie_3_Tee NT12
+U 1 1 5C13247E
+P 10150 5650
+F 0 "NT12" V 10104 5691 50  0000 L CNN
+F 1 "Tie" V 10195 5691 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 5650 50  0001 C CNN
+F 3 "~" H 10150 5650 50  0001 C CNN
+	1    10150 5650
+	0    1    1    0   
+$EndComp
+Text Label 10050 5650 2    50   ~ 0
+CLK11
+Text Label 10150 5550 0    50   ~ 0
+CLK11_0
+Text Label 10150 5750 0    50   ~ 0
+CLK11_1
+$Comp
+L Device:Net-Tie_3_Tee NT9
+U 1 1 5C132487
+P 9500 5200
+F 0 "NT9" V 9454 5241 50  0000 L CNN
+F 1 "Tie" V 9545 5241 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 9500 5200 50  0001 C CNN
+F 3 "~" H 9500 5200 50  0001 C CNN
+	1    9500 5200
+	0    1    1    0   
+$EndComp
+Text Label 9400 5200 2    50   ~ 0
+CLK8
+Text Label 9500 5100 0    50   ~ 0
+CLK8_0
+Text Label 9500 5300 0    50   ~ 0
+CLK8_1
+$Comp
+L Device:Net-Tie_3_Tee NT10
+U 1 1 5C132490
+P 10150 5200
+F 0 "NT10" V 10104 5241 50  0000 L CNN
+F 1 "Tie" V 10195 5241 50  0000 L CNN
+F 2 "bridges:bridge_1x2_0.12mm" H 10150 5200 50  0001 C CNN
+F 3 "~" H 10150 5200 50  0001 C CNN
+	1    10150 5200
+	0    1    1    0   
+$EndComp
+Text Label 10050 5200 2    50   ~ 0
+CLK9
+Text Label 10150 5100 0    50   ~ 0
+CLK9_0
+Text Label 10150 5300 0    50   ~ 0
+CLK9_1
+$Comp
+L power:+3V3 #PWR08
+U 1 1 5C135EC4
+P 7300 3550
+F 0 "#PWR08" H 7300 3400 50  0001 C CNN
+F 1 "+3V3" H 7315 3723 50  0000 C CNN
+F 2 "" H 7300 3550 50  0001 C CNN
+F 3 "" H 7300 3550 50  0001 C CNN
+	1    7300 3550
 	1    0    0    -1  
 $EndComp
-Text Label 7900 4050 3    50   ~ 0
-CLK1_3
-Text Label 7800 4050 3    50   ~ 0
-CLK1_2
-Text Label 7700 4050 3    50   ~ 0
-CLK1_1
-Text Label 7600 4050 3    50   ~ 0
-CLK1_0
-Text Label 7600 3650 0    50   ~ 0
+$Comp
+L power:GND #PWR013
+U 1 1 5C135ECA
+P 6250 5300
+F 0 "#PWR013" H 6250 5050 50  0001 C CNN
+F 1 "GND" H 6250 5150 50  0000 C CNN
+F 2 "" H 6250 5300 50  0001 C CNN
+F 3 "" H 6250 5300 50  0001 C CNN
+	1    6250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C135ED0
+P 5600 5050
+F 0 "#PWR010" H 5600 4800 50  0001 C CNN
+F 1 "GND" H 5600 4900 50  0000 C CNN
+F 2 "" H 5600 5050 50  0001 C CNN
+F 3 "" H 5600 5050 50  0001 C CNN
+	1    5600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5000 5600 5000
+Wire Wire Line
+	5600 5000 5600 5050
+Wire Wire Line
+	5750 4900 5600 4900
+Wire Wire Line
+	5600 4900 5600 5000
+Connection ~ 5600 5000
+Wire Wire Line
+	5750 4700 5650 4700
+Wire Wire Line
+	5650 4700 5650 4600
+Wire Wire Line
+	5650 4000 5550 4000
+Connection ~ 5650 4000
+Wire Wire Line
+	5650 4000 5750 4000
+Wire Wire Line
+	5750 4100 5650 4100
+Connection ~ 5650 4100
+Wire Wire Line
+	5650 4100 5650 4000
+Wire Wire Line
+	5750 4200 5650 4200
+Connection ~ 5650 4200
+Wire Wire Line
+	5650 4200 5650 4100
+Wire Wire Line
+	5750 4300 5650 4300
+Connection ~ 5650 4300
+Wire Wire Line
+	5650 4300 5650 4200
+Wire Wire Line
+	5750 4400 5650 4400
+Connection ~ 5650 4400
+Wire Wire Line
+	5650 4400 5650 4300
+Wire Wire Line
+	5750 4500 5650 4500
+Connection ~ 5650 4500
+Wire Wire Line
+	5650 4500 5650 4400
+Wire Wire Line
+	5750 4600 5650 4600
+Connection ~ 5650 4600
+Wire Wire Line
+	5650 4600 5650 4500
+Text Label 5550 4000 2    50   ~ 0
+CLKIN
+Text Label 6750 4100 0    50   ~ 0
+CLK12
+Text Label 6750 4200 0    50   ~ 0
+CLK11
+Text Label 6750 4400 0    50   ~ 0
+CLK5
+Text Label 6750 4600 0    50   ~ 0
 CLK1
 $Comp
-L Device:R_Network04 RN3
-U 1 1 5C079AF0
-P 7800 3850
-F 0 "RN3" H 7980 3850 50  0000 L CNN
-F 1 "0" H 7980 3805 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 8075 3850 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7800 3850 50  0001 C CNN
-	1    7800 3850
+L Device:C_Small C2
+U 1 1 5C135EFA
+P 7300 3850
+F 0 "C2" H 7392 3896 50  0000 L CNN
+F 1 "100n" H 7392 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 3850 50  0001 C CNN
+F 3 "~" H 7300 3850 50  0001 C CNN
+	1    7300 3850
 	1    0    0    -1  
 $EndComp
-Text Label 8500 4050 3    50   ~ 0
-CLK2_3
-Text Label 8400 4050 3    50   ~ 0
-CLK2_2
-Text Label 8300 4050 3    50   ~ 0
-CLK2_1
-Text Label 8200 4050 3    50   ~ 0
-CLK2_0
-Text Label 8200 3650 0    50   ~ 0
+$Comp
+L power:GND #PWR09
+U 1 1 5C135F00
+P 7300 3950
+F 0 "#PWR09" H 7300 3700 50  0001 C CNN
+F 1 "GND" H 7305 3777 50  0000 C CNN
+F 2 "" H 7300 3950 50  0001 C CNN
+F 3 "" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC244 K2
+U 1 1 5C135F06
+P 6250 4500
+F 0 "K2" H 6400 5200 50  0000 C CNN
+F 1 "74LV244" H 5950 5200 50  0000 C CNN
+F 2 "Package_SO:SSOP-20_4.4x6.5mm_P0.65mm" H 6250 4500 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT244.pdf" H 6250 4500 50  0001 C CNN
+	1    6250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3550 7300 3600
+Wire Wire Line
+	6250 3700 6250 3600
+Wire Wire Line
+	6250 3600 7300 3600
+Connection ~ 7300 3600
+Wire Wire Line
+	7300 3600 7300 3750
+Text Label 6750 4300 0    50   ~ 0
+CLK10
+Text Label 6750 4000 0    50   ~ 0
+CLK13
+Text Label 6800 1750 0    50   ~ 0
 CLK2
-$Comp
-L Device:R_Network04 RN5
-U 1 1 5C07A542
-P 8400 3850
-F 0 "RN5" H 8580 3850 50  0000 L CNN
-F 1 "0" H 8580 3805 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 8675 3850 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8400 3850 50  0001 C CNN
-	1    8400 3850
-	1    0    0    -1  
-$EndComp
-Text Label 9100 4050 3    50   ~ 0
-CLK3_3
-Text Label 9000 4050 3    50   ~ 0
-CLK3_2
-Text Label 8900 4050 3    50   ~ 0
-CLK3_1
-Text Label 8800 4050 3    50   ~ 0
-CLK3_0
-Text Label 8800 3650 0    50   ~ 0
-CLK3
-$Comp
-L Device:R_Network04 RN7
-U 1 1 5C07A54D
-P 9000 3850
-F 0 "RN7" H 9180 3850 50  0000 L CNN
-F 1 "0" H 9180 3805 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 9275 3850 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9000 3850 50  0001 C CNN
-	1    9000 3850
-	1    0    0    -1  
-$EndComp
-Text Label 7300 4900 3    50   ~ 0
-CLK4_3
-Text Label 7200 4900 3    50   ~ 0
-CLK4_2
-Text Label 7100 4900 3    50   ~ 0
-CLK4_1
-Text Label 7000 4900 3    50   ~ 0
-CLK4_0
-Text Label 7000 4500 0    50   ~ 0
+NoConn ~ 6800 1850
+Text Label 6750 4700 0    50   ~ 0
 CLK4
-$Comp
-L Device:R_Network04 RN2
-U 1 1 5C07ABC9
-P 7200 4700
-F 0 "RN2" H 7380 4700 50  0000 L CNN
-F 1 "0" H 7380 4655 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 7475 4700 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7200 4700 50  0001 C CNN
-	1    7200 4700
-	1    0    0    -1  
-$EndComp
-Text Label 7900 4900 3    50   ~ 0
-CLK5_3
-Text Label 7800 4900 3    50   ~ 0
-CLK5_2
-Text Label 7700 4900 3    50   ~ 0
-CLK5_1
-Text Label 7600 4900 3    50   ~ 0
-CLK5_0
-Text Label 7600 4500 0    50   ~ 0
-CLK5
-$Comp
-L Device:R_Network04 RN4
-U 1 1 5C07ABD4
-P 7800 4700
-F 0 "RN4" H 7980 4700 50  0000 L CNN
-F 1 "0" H 7980 4655 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 8075 4700 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7800 4700 50  0001 C CNN
-	1    7800 4700
-	1    0    0    -1  
-$EndComp
-Text Label 8500 4900 3    50   ~ 0
-CLK6_3
-Text Label 8400 4900 3    50   ~ 0
-CLK6_2
-Text Label 8300 4900 3    50   ~ 0
-CLK6_1
-Text Label 8200 4900 3    50   ~ 0
-CLK6_0
-Text Label 8200 4500 0    50   ~ 0
-CLK6
-$Comp
-L Device:R_Network04 RN6
-U 1 1 5C07ABDF
-P 8400 4700
-F 0 "RN6" H 8580 4700 50  0000 L CNN
-F 1 "0" H 8580 4655 50  0001 L CNN
-F 2 "bridges:bridge_1x4_0.1mm" V 8675 4700 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8400 4700 50  0001 C CNN
-	1    8400 4700
-	1    0    0    -1  
-$EndComp
+NoConn ~ 6750 4500
 $EndSCHEMATC
